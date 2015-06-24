@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+	<HEAD>
+	<TITLE>Use PHP in HTML files</TITLE>
+	</HEAD>
+ <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32290925-1']);
+  _gaq.push(['_setDomainName', 'renshiners.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+	<BODY>
+		<h1>
+<?php
+$username = "root";
+$password = "bhana";
+$hostname = "localhost"; 
+
+
+$dbhandle = mysql_connect($hostname, $username, $password) 
+or die("Unable to connect to MySQL");
+echo "Connected to MySQL<br>";
+
+
+$selected = mysql_select_db("",$dbhandle) 
+or die("Could not select examples");
+
+
+$result = mysql_query("SELECT id, model,year FROM cars");
+
+
+while ($row = mysql_fetch_array($result)) {
+echo "ID:".$row{'id'}." Name:".$row{'model'}."Year: ". //display the results
+$row{'year'}."<br>";
+}
+
+mysql_close($dbhandle);
+?>
+</h1>
+	</BODY>
+</HTML>

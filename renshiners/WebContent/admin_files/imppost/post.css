@@ -1,0 +1,57 @@
+#title
+{
+	font-family:impact;
+	color:#000000;
+	font-size:20px;
+		
+}
+#sdesc
+{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:#626262;
+	font-size:12px;
+	text-align:justify;
+}
+#desc
+{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:#626262;
+	font-size:15px;
+	text-align:justify;
+}
+#desc1
+{
+	font-family:sans-serif;
+	color:#000000;
+	
+#td1
+{
+height:50px;
+vertical-align:top;
+text-align:justify;
+}
+#td3
+{
+height:50px;
+
+}
+#list1
+{
+	font-family:impact;
+	color:#000000;
+	font-size:17px;
+}
+#list2
+{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:#2A1FAA;
+	font-size:13px;
+	font-weight:bold;
+}
+#list3
+{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:#2A1FAA;
+	font-size:13px;
+	font-weight:bold;
+}
